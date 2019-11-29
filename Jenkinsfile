@@ -32,7 +32,7 @@ pipeline {
             steps {
                 // 
                 echo 'etape Deploy'
-                copy /y 'C:\opt\Jenkins\workspace\eBureaupipeline\target\ebureau.war' 'C:\Program Files\Apache Software Foundation\Tomcat 9.0\webapps\ebureau.war'
+                copy 'C:\opt\Jenkins\workspace\eBureaupipeline\target\ebureau.war' 'C:\Program Files\Apache Software Foundation\Tomcat 9.0\webapps\ebureau.war'
                 
             }
         }
