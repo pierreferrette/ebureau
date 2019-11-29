@@ -10,6 +10,7 @@ pipeline {
             steps {
                 // 
                 echo 'etape Compile'
+                bat 'mvn clean compile'
             }
         }
         
