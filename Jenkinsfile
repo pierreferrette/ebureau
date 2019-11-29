@@ -18,18 +18,21 @@ pipeline {
             steps {
                 // 
                 echo 'etape Test'
+                bat 'mvn clean test'
             }
         }
         stage('Packaging') { 
             steps {
                 // 
                 echo 'etape Packaging'
+                bat 'mvn clean package'
             }
          }
         stage('Deploy') { 
             steps {
                 // 
                 echo 'etape Deploy'
+                
             }
         }
     }
